@@ -1,0 +1,47 @@
+[debug] [2022-02-17T03:15:55.524Z] ----------------------------------------------------------------------
+[debug] [2022-02-17T03:15:55.527Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\katy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-17T03:15:55.528Z] CLI Version:   9.16.0
+[debug] [2022-02-17T03:15:55.528Z] Platform:      win32
+[debug] [2022-02-17T03:15:55.528Z] Node Version:  v14.12.0
+[debug] [2022-02-17T03:15:55.529Z] Time:          Thu Feb 17 2022 05:15:55 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-02-17T03:15:55.529Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-17T03:15:55.579Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-17T03:15:55.580Z] > authorizing via signed-in user (katriennakhla52@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\D3js\my-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using d3-demo-a9d6a. 
+[debug] [2022-02-17T03:15:58.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/d3-demo-a9d6a [none]
+[debug] [2022-02-17T03:15:58.541Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/d3-demo-a9d6a 403
+[debug] [2022-02-17T03:15:58.541Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/d3-demo-a9d6a {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-02-17T03:15:58.543Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-02-17T03:15:58.797Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\katy\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\katy\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\katy\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\katy\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\katy\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\katy\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project d3-demo-a9d6a. Please make sure the project exists and your account has permission to access it.
