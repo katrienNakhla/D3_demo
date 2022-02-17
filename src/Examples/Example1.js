@@ -220,7 +220,7 @@ function Example1() {
             <Button
               className="btn"
               onClick={() => {
-                if (newElement != "") {
+                if (newElement !== "") {
                   let TempData = data;
                   TempData.push({
                     x: 0.3 * ScreenWidth,

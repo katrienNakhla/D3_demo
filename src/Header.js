@@ -9,9 +9,9 @@ function Header() {
         <NavItem>
           <NavLink href="/example1">Example 1</NavLink>{" "}
         </NavItem>
-        <NavItem>
+        {/* <NavItem>
           <NavLink href="/example2">Example 2</NavLink>{" "}
-        </NavItem>
+        </NavItem> */}
       </Nav>
     </Col>
   );
